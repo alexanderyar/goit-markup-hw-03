@@ -28,8 +28,46 @@ body {
 
 /* footer contact background: rgba(255, 255, 255, 0.6); */
 
+h1,h2,h3,h4 {
+    margin-top: 0px;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    outline: 3px solid tomato;
+    margin-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.margin-reset {
+    margin-top: 0px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+    
+
 
 .logo {
+outline: 1px solid tomato;
+
     font-family: raleway, sans-serif;
     color: black;
     font-weight: 700;
@@ -42,21 +80,31 @@ body {
 }
 .list {
     list-style:none;
-}
+    margin: 0;
+padding-left: 0px;}
+
 
 /* site nav  */
 
-.site-nav {
-    display:flex ;}
 
-.site-nav .item + .item {
-    margin-left: 50px;
+.site-nav {
+    display: flex;
+    margin-left: 93px;
 }
+
+
+
+.site-nav .item+.item {
+    margin-left: 50px;
+    outline: 2px solid tomato;
+}
+
 
 .item > .link {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    outline: 2px solid tomato;
 }
 
 
@@ -72,7 +120,13 @@ body {
 .auth a:focus {
     color:var(--accent-color);
 }
+
+
 /* auth */
+
+.auth {
+    margin-left: auto;
+}
 .auth a {
     color:var(--primary-text-color);
     font-weight: 500;
@@ -82,10 +136,28 @@ body {
         text-decoration: none;
 }
 
+.container-auth {
+    display:flex;
+    outline: 2px solid teal;
+}
+
+.container-auth > .item+.item {
+    margin-left: 50px;
+}
+
+
+
 /* hero */
 
 
 .section .hero {
+    margin-top: 0;
+    margin-bottom: 30px;
+    outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 696px;
+
     color: #fff;
     font-weight: 900;
     font-size: 44px;
@@ -96,15 +168,74 @@ body {
 
 }
 
+
+/* Our sevvices  */
+
+
+.services {
+    display: flex;
+
+}
+
+.services .item + .item {
+    margin-left: 30px;
+}
+
 .section-bgc {
+padding-top: 200px;
+padding-bottom: 210px;
+    
+
+
     background-color:var(--hero-and-footer-color);
 }
+
+.bgc-footer {
+
+    background-color: var(--hero-and-footer-color);
+}
+
+
+/* advantages */
+
+.advantages {
+    margin-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.advantages .advantages-list {
+    display: flex;
+
+}
+
+.advantages-list .item {
+width: calc((100%-90px)/3);
+margin-right: 30px;
+outline: 1px solid teal;
+}
+.advantages-list .item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+
+
+
 .section .section-title {
     color:var(--secondary-text-color);
     text-align: center;
     font-weight: 700;
     font-size: 36px;
 }
+.list .subheader {
+    margin-bottom: 10px;
+}
+
+.container .section-title {
+    margin-bottom: 50px;
+}
+
 .subheader {
 color:var(--secondary-text-color);
 
@@ -114,12 +245,46 @@ line-height: 1.14;
 text-transform: uppercase;
 }
 
+/* our team */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.team-list {
+    display: flex;
+}
+
+.team-list .item {
+    text-align: center;
+    margin-right: 30px;
+
+
+    background-color: #fff;
+
+    outline: 1px solid tomato;
+}
+
+.team-list .item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+
+.image {
+    margin-bottom: 30px;
+}
+
 .subheader-team {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     color:var(--secondary-text-color);
 }
+
+
 
 .subheader-text {
     font-size: 14px;
@@ -145,13 +310,16 @@ text-transform: uppercase;
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor:pointer;
+    border:transparent;
 }
 .button:hover, button:focus {
     color:#fff;
     background-color:#188CE8;
 } 
-.button-centered {
-    text-align: center;
+.button-centered .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-footer {
@@ -179,6 +347,20 @@ text-transform: uppercase;
      font-style:normal;
      color:rgba(255, 255, 255, 0.6);
  }
+
+.container-footer {
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.advantages .hide {
+    margin-bottom: 0px;
+}
+
+.hide {
+    display: none;
+}
  /* from here starting adding additional styles for portfolio.html */
  
  .site-nav .current {
