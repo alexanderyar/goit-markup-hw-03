@@ -62,9 +62,7 @@ img {
 .margin-reset {
     margin-top: 0px;
 }
-.borderclass {
-    border-bottom:1px solid #ECECEC;
-}
+
 
 .main-nav {
     display: flex;
@@ -327,6 +325,8 @@ text-transform: uppercase;
     letter-spacing: 0.06em;
     cursor:pointer;
     border:transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .button:hover, button:focus {
     color:#fff;
