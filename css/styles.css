@@ -452,6 +452,7 @@ color: var(--primary-text-color);
     display: flex;
     flex-wrap: wrap;
     padding-top: 56px;
+    padding-bottom: 94px;
 }
 .port-cards .item {
     width: calc( (100% - 60px) / 3);
